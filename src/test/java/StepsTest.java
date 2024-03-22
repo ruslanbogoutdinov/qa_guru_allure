@@ -9,7 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class StepsTest {
     @Test
-    void yandexSearchFieldLambdaTest(){
+    void testYandexSearchFieldLambdaTest(){
         // выводим полный test body в allure отчете
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -32,7 +32,7 @@ public class StepsTest {
 
     // такой подход хорош для переиспользования степов
     @Test
-    void yandexSearchFieldAnnotatedTest(){
+    void testYandexSearchFieldAnnotatedTest(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps steps = new WebSteps();
 
