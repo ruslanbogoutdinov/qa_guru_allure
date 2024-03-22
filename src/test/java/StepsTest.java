@@ -23,7 +23,7 @@ public class StepsTest {
             $("#text").setValue("selenide");
         });
         step("Кликаем по кнопке 'Найти'", ()->{
-            $("button[type='submitt']").click();
+            $("button[type='submit']").click();
         });
         /*step("Проверяем отображение списка найденных элементов", ()->{
             $("ul#search-result").should(exist);
