@@ -19,7 +19,7 @@ allure{
     adapter{ // отвечает за появление папки 'allure-results'
         aspectjWeaver.set(true) // обработка аннотаций @Step
         frameworks{
-            junit{
+            junit5{
                 adapterVersion.set("2.19.0") // allure-framework/allure2 https://github.com/allure-framework/allure2
             }
         }
