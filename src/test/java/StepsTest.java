@@ -41,5 +41,6 @@ public class StepsTest {
         steps.enterDataInSearchField();
         steps.clickOnSearchButton();
         //steps.checkListOfFoundItems();
+        //steps.checkListOfFoundItems();
     }
 }
