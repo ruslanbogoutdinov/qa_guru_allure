@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     // allure https://plugins.gradle.org/plugin/io.qameta.allure
-    id 'io.qameta.allure' version '2.11.2'
+    id 'io.qameta.allure' version '2.10.0'
 }
 
 group 'guru.qa'
@@ -14,13 +14,13 @@ repositories {
 // allure
 allure{
     report{
-        version.set("2.26.0") // allure-framework/allure2 https://github.com/allure-framework/allure2
+        version.set("2.19.0") // allure-framework/allure2 https://github.com/allure-framework/allure2
     }
     adapter{ // отвечает за появление папки 'allure-results'
         aspectjWeaver.set(true) // обработка аннотаций @Step
         frameworks{
             junit{
-                adapterVersion.set("2.26.0") // allure-framework/allure2 https://github.com/allure-framework/allure2
+                adapterVersion.set("2.19.0") // allure-framework/allure2 https://github.com/allure-framework/allure2
             }
         }
     }
@@ -29,7 +29,7 @@ allure{
 dependencies {
     testImplementation(
         'com.codeborne:selenide:6.7.2',
-        'org.junit.jupiter:junit-jupiter-api:5.9.3',
+        'org.junit.jupiter:junit-jupiter-api:5.9.0',
         'io.qameta.allure:allure-selenide:2.19.0'
     )
 }
