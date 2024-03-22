@@ -29,7 +29,7 @@ allure{
 dependencies {
     testImplementation(
         'com.codeborne:selenide:6.7.2',
-        'org.junit.jupiter:junit-jupiter-api:5.9.8',
+        'org.junit.jupiter:junit-jupiter-api:5.9.3',
         'io.qameta.allure:allure-selenide:2.19.0'
     )
 }
